@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="devops" class="service.DevOpsCourse"/>
+<bean id="java" class="service.JavaCourse"/>
+<bean id="sb" class="service.SpringBootCourse"/>
+
+
+
+<bean id="telusko" class="service.Telusko">
+<!-- There is a setter method in the telusko  class create property to inject dependency -->
+<!-- <property ref="devops" name="course"></property> -->
+
+<!-- There is a Constructor method in the telusko  class create property to inject dependency -->
+<constructor-arg ref="sb" name="course">
+
+</constructor-arg>
+</bean>
+
+</beans>
