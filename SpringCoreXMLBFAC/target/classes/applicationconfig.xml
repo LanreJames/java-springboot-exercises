@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+           
+ <bean id="emp" class="util.Employee">
+ <constructor-arg value="1"></constructor-arg>
+ <constructor-arg value="Adekunle"></constructor-arg>
+ <constructor-arg value="130032.3"></constructor-arg>
+ <constructor-arg value="Agbara"></constructor-arg>
+ </bean>
+ 
+ <bean id="emp2" class="util.Employee">
+ <constructor-arg name="salary" value="2043.24"></constructor-arg>
+ <constructor-arg name="id" value="2"></constructor-arg>
+ <constructor-arg name="city" value="Malta"></constructor-arg>
+ <constructor-arg name="name" value="Eseose"></constructor-arg>
+ 
+ </bean>
+ 
+ <bean id="emp1" class="util.Employee">
+ <constructor-arg index="0" value="3"></constructor-arg>
+ <constructor-arg index="1" value="Motunrayo"></constructor-arg>
+ <constructor-arg index="2" value="2507.5"></constructor-arg>
+ <constructor-arg index="3"  value="London"></constructor-arg>
+ </bean>
+  </beans>
